@@ -1,0 +1,26 @@
+[
+  {
+    "code": "ZA",
+    "price": 2,
+    "bulk_price": 7,
+    "bulk_amount": 4
+  },
+  {
+    "code": "YB",
+    "price": 12,
+    "bulk_price": 0,
+    "bulk_amount": 0
+  },
+  {
+    "code": "FC",
+    "price": 1.25,
+    "bulk_price": 6,
+    "bulk_amount": 6
+  },
+  {
+    "code": "GD",
+    "price": 0.15,
+    "bulk_price": 0,
+    "bulk_amount": 0
+  }
+]

@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+use App\Models\Domain\Pricing\Provider\JsonProvider;
+use App\Models\Domain\Terminal\Terminal;
+
+require __DIR__ . '/vendor/autoload.php';
+
+try {
+    $terminal = new Terminal();
+    $terminal->setPricing(new JsonProvider('pricing.json'));
+    $terminal->scanItem('ZA');
+    $terminal->scanItem('YB');
+    $terminal->scanItem('FC');
+    $terminal->scanItem('GD');
+    $terminal->scanItem('ZA');
+    $terminal->scanItem('YB');
+    $terminal->scanItem('ZA');
+    $terminal->scanItem('ZA');
+
+    echo $terminal->getTotal() . PHP_EOL;
+} catch (Exception $e) {
+    echo $e->getMessage() . PHP_EOL;
+}
